@@ -1,0 +1,43 @@
+.book {
+
+}
+
+.backgroundImg{
+	background: url('../images/testMap.jpg') 0 0 no-repeat;
+	position: absolute;
+	width: 870px;
+	height: 520px;
+	left: 0;
+	top: 0;
+	transform: scale(1);
+	cursor: hand;
+}
+
+div.backgroundImg p{
+	position: absolute;
+}
+
+div.backgroundImg p:nth-child(1) {
+	top: 60px;
+	left: 60px;
+}
+
+div.backgroundImg p:nth-child(2) {
+	top: 230px;
+	left: 285px;
+}
+
+div#monitor {
+	width: 90%;
+	height: 0;
+	margin: 10px auto;
+	background-color: #00B7FF;
+	opacity: 0.5;
+}
+
+p.tile {
+	position: absolute;
+	font-size: 35px;
+	opacity: 0.6;
+	pointer-events: none;
+}
