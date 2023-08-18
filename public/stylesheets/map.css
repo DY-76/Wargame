@@ -17,16 +17,6 @@ div.backgroundImg p{
 	position: absolute;
 }
 
-div.backgroundImg p:nth-child(1) {
-	top: 60px;
-	left: 60px;
-}
-
-div.backgroundImg p:nth-child(2) {
-	top: 230px;
-	left: 285px;
-}
-
 div#monitor {
 	width: 90%;
 	height: 0;
@@ -40,4 +30,6 @@ p.tile {
 	font-size: 35px;
 	opacity: 0.6;
 	pointer-events: none;
+	padding: 0;
+	margin: 0;
 }
