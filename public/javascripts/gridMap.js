@@ -12,6 +12,8 @@ function gridMapLoad() {
     let tilePos = [[],[]];
 
     const map = document.getElementById("map");
+    const mw = map.getBoundingClientRect().width;
+    const mh = map.getBoundingClientRect().height;
     const mapw = Number(getComputedStyle(map).width.replace('px',''));
     const maph = Number(getComputedStyle(map).height.replace('px',''));
     console.log(mapw, maph);
@@ -27,6 +29,10 @@ function gridMapLoad() {
     }
     console.log(tilePos);
 
+    // 최대값이 +1 되는 문제 있음
+    console.log("SWI", Math.floor(SW/(mw/tileNum[0])), "EWI", Math.floor(EW/(mw/tileNum[0])));
+    console.log("SHI", Math.floor(SH/(mh/tileNum[1])), "EHI", Math.floor(EH/(mh/tileNum[1])));
+    // GMVP 값으로 비율(타일 index) 계산해서 해당 타일만 출력해야 함
     for(let y=0;y<tileNum[1];y++){
         for(let x=0;x<tileNum[0];x++){
             const dc_p = document.createElement("p");
