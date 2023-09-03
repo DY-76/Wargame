@@ -20,7 +20,6 @@ function moveDrag(e) {
 // 드래그 시작
 function startDrag(e, obj) {
     console.log("Drag ST")
-    gridMapDel();
     targetObj = obj;
     var e_obj = window.event ? window.event : e;
     img_L = getLeft(obj) - e_obj.clientX;
