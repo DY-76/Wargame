@@ -7,8 +7,8 @@ function gridMapLoad() {
     let GMVP = getMapViewPx();
     let SW=GMVP[0], EW=GMVP[1], SH=GMVP[2], EH=GMVP[3];
     // x, y
-    let tileNum = [12,10];
-    // x pos, y pos
+    let tileNum = [10,18];
+    // x pos, y pos init
     let tilePos = [[],[]];
 
     const map = document.getElementById("map");
@@ -37,7 +37,6 @@ function gridMapLoad() {
             map.appendChild(dc_p);
         }
     }
-
 
     // W, H (tile num)
     // let mapViewTiles = [Math.floor(mapView[0]/44), Math.floor(mapView[1]/12.5)];
