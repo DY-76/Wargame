@@ -56,7 +56,7 @@ function gridMapLoad() {
     //         map.appendChild(dc_p);
     //     }
     // }
-    
+    printLog("Map Tile Loaded!");
 }
 
 // OUTPUT : Start Width, End Width, Strat Height, End Height
