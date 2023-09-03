@@ -3,7 +3,41 @@ function gridMapDel() {
 }
 
 function gridMapLoad() {
-    console.log(getMapViewPx());
+    gridMapDel();
+    let GMVP = getMapViewPx();
+    let SW=GMVP[0], EW=GMVP[1], SH=GMVP[2], EH=GMVP[3];
+    // x, y
+    let tileNum = [12,10];
+    // x pos, y pos
+    let tilePos = [[],[]];
+
+    const map = document.getElementById("map");
+    const mapw = Number(getComputedStyle(map).width.replace('px',''));
+    const maph = Number(getComputedStyle(map).height.replace('px',''));
+    console.log(mapw, maph);
+
+    console.log("GMVP: ", GMVP);
+    // tilePos X
+    for(let i=0;i<tileNum[0];i++){
+        tilePos[0][i] = i*(mapw/tileNum[0])
+    }
+    // tilePos Y
+    for(let i=0;i<tileNum[1];i++){
+        tilePos[1][i] = i*(maph/tileNum[1])
+    }
+    console.log(tilePos);
+
+    for(let y=0;y<tileNum[1];y++){
+        for(let x=0;x<tileNum[0];x++){
+            const dc_p = document.createElement("p");
+            dc_p.innerText = "⬣";
+            // let inPx = (44*w) + inLine;
+            dc_p.setAttribute("style","left:"+String(tilePos[0][x])+"px;top:"+String(tilePos[1][y])+"px;");
+            dc_p.setAttribute("class","tile");
+            map.appendChild(dc_p);
+        }
+    }
+
 
     // W, H (tile num)
     // let mapViewTiles = [Math.floor(mapView[0]/44), Math.floor(mapView[1]/12.5)];
@@ -22,6 +56,7 @@ function gridMapLoad() {
     //         map.appendChild(dc_p);
     //     }
     // }
+    console.log("System");
 }
 
 // OUTPUT : Start Width, End Width, Strat Height, End Height
