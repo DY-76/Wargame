@@ -56,7 +56,7 @@ function gridMapLoad() {
     //         map.appendChild(dc_p);
     //     }
     // }
-    console.log("System");
+    
 }
 
 // OUTPUT : Start Width, End Width, Strat Height, End Height
