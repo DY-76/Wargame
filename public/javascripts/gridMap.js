@@ -36,7 +36,7 @@ function gridMapLoad() {
     for(let y=0;y<tileNum[1];y++){
         for(let x=0;x<tileNum[0];x++){
             const dc_p = document.createElement("p");
-            dc_p.innerText = "⬣";
+            dc_p.innerText = "⬢";
             // let inPx = (44*w) + inLine;
             dc_p.setAttribute("style","left:"+String(tilePos[0][x])+"px;top:"+String(tilePos[1][y])+"px;");
             dc_p.setAttribute("class","tile");
