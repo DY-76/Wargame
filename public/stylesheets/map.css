@@ -17,17 +17,9 @@ div.backgroundImg p{
 	position: absolute;
 }
 
-div#monitor {
-	width: 90%;
-	height: 0;
-	margin: 10px auto;
-	background-color: #00B7FF;
-	opacity: 0.5;
-}
-
 p.tile {
 	position: absolute;
-	font-size: 35px;
+	font-size: 45px;
 	opacity: 0.6;
 	pointer-events: none;
 	padding: 0;
