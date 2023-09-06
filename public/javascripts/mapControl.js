@@ -59,8 +59,3 @@ function startWheel(e, obj) {
 
     gridMapLoad();
 }
-
-window.onresize = function() {
-    console.log(window.innerHeight);
-    document.getElementById('monitor').style.height = window.innerHeight - 20 + 'px';
-}
