@@ -7,7 +7,7 @@ function gridMapLoad() {
     let GMVP = getMapViewPx();
     let SW=GMVP[0], EW=GMVP[1], SH=GMVP[2], EH=GMVP[3];
     // x, y
-    let tileNum = [28,15];
+    let tileNum = [56,30];
     // x, y origin pos init
     let tilePos = [[],[]];
 

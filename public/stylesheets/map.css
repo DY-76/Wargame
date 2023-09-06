@@ -5,8 +5,8 @@
 .backgroundImg{
 	background: url('../images/testMap.jpg') 0 0 no-repeat;
 	position: absolute;
-	width: 800px;
-	height: 400px;
+	width: 1600px;
+	height: 800px;
 	left: 0;
 	top: 0;
 	transform: scale(1);
