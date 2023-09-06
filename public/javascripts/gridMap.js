@@ -33,17 +33,19 @@ function gridMapLoad() {
     let SHI = Math.floor(SH/(mh/tileNum[1])), EHI = Math.floor(EH/(mh/tileNum[1]));
     for(let y=SHI;y<EHI;y++){
         for(let x=SWI;x<EWI;x++){
-            const dc_p = document.createElement("p");
-            dc_p.innerText = "⬢";
+            // const dc_p = document.createElement("p");
+            // dc_p.innerText = "⬢";
+            const dc_tile = document.createElement("img");
             // if y is even, add +inPx for tile's x pos
             if(y%2==0){
                 let inPx = tilePos[0][1]/2;
-                dc_p.setAttribute("style","left:"+String(tilePos[0][x]+inPx)+"px;top:"+String(tilePos[1][y])+"px;");
+                dc_tile.setAttribute("style","left:"+String(tilePos[0][x]+inPx)+"px;top:"+String(tilePos[1][y])+"px;");
             }else{
-                dc_p.setAttribute("style","left:"+String(tilePos[0][x])+"px;top:"+String(tilePos[1][y])+"px;");
+                dc_tile.setAttribute("style","left:"+String(tilePos[0][x])+"px;top:"+String(tilePos[1][y])+"px;");
             }
-            dc_p.setAttribute("class","tile");
-            map.appendChild(dc_p);
+            dc_tile.setAttribute("class","tile");
+            dc_tile.setAttribute("src","../images/tile.png");
+            map.appendChild(dc_tile);
         }
     }
 
